@@ -7,10 +7,10 @@ import numpy as np
 # title
 st.title('Hotdog, Not Hotdog')
 # model
-model = keras.models.load_model('./assets/model')
+model = keras.models.load_model('./hnh_rcnn/')
 # file uploader
 # load an image to classify
-uploaded_file = st.file_uploader("Upload a scrumptious image:", type=["png","jpg","jpeg"])
+uploaded_file = st.file_uploader("Choose an image:", type=["png","jpg","jpeg"])
 
 #hotdoggy = load_img(st.file_uploader("Choose an image:", type="jpg"), target_size=(256, 256))
 
