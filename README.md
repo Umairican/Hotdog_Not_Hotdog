@@ -3,17 +3,6 @@ Computer Vision Project For Determining if an image is a hotdog, or not a hotdog
 
 
 
-### Table of Contents
-
-* [Problem Statement](#user-content-problem-statement)
-* [Executive Summary](#user-content-executive-summary)
-* [Conclusions and Recommendations](#user-content-conclusions-and-recommendations)
-* [Data](#user-data)
-* [Additional Resources](#user-content-additional-information)
-
-
-
-
 ---
 
 
