@@ -6,6 +6,8 @@ import tensorflow as tf
 import numpy as np
 # title
 st.title('Hotdog, Not Hotdog')
+image = Image.open("./assets/jian_yang_hbo_silicon_valley.0.jpeg")
+st.image(image)
 # model
 model = keras.models.load_model('./assets/model')
 # file uploader
@@ -24,11 +26,13 @@ if uploaded_file is not None:
     hotdog_array = np.array(resized_hotdog).reshape(1,256,256,3)
 
 
-#These are for displaying to our intrepid customer
+#These are for displaying to our intrepid customers
     st.write("")
-    st.write("Classifying...")
+    st.write("Classifying... Please grab a hotdog while you wait")
     # model prediction
     label = model.predict(hotdog_array)
+    label = str(label * 100) + '%'
     # write results
     st.write("You are this likely to be in hotdogland")
     st.write(label)
+    st.markdown("![Alt Text](https://media.giphy.com/media/3o7TKO3AC2o5cOkZfG/giphy.gif)")
