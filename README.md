@@ -21,10 +21,12 @@ Computer Vision Project For Determining if an image is a hotdog, or not a hotdog
  
 The goal of this project is to train a convolutional neural network model with Keras to reliably distinguish if an image is a hotdog, or not a hotdog. With some luck, it may even be able to answer the age-old question of whether or not a hotdog is a sandwich.
 
+We are attempting to see if the model performs better than blindly guessing (50/50 in binary classification).
+
 
 ### Executive Summary
 
-
+Using convolutional neural networks with Max Pooling layers, we have managed to achieve an accuracy of 70% with our model. I have deployed this model on Streamlit to be tested, which takes uploaded images and returns a percentage response for whether or not the model believes it is looking at a hotdog. Test it out and see what results you get!
 
 ### Data
 
